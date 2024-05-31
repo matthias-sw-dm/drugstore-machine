@@ -1,7 +1,7 @@
 CREATE TABLE products
 (
     id  int PRIMARY KEY,
-    name    text,
-    product_group   text,
+    name    varchar(255),
+    product_group   varchar(255),
     price   float
 );
