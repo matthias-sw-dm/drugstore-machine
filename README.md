@@ -2,10 +2,13 @@
 
 ## The dm drugstore machine
 
-* The drugstore machine manages 8 different products
-* The machine can be filled with products
-* Customers can buy products and the machine calculates the total price
-* You can only buy as many products as there are in the machine
+You are tasked with implementing a simple drugstore machine that manages different products. The machine should be able to perform the following operations:
+
+1. Fill the machine with products.
+2. Allow customers to buy products and calculate the total price.
+3. Enforce the constraint that customers can only buy as many products as there are in the machine. 
+
+The machine should support the following products:
 
 ### Product 1:
 
@@ -63,5 +66,8 @@
 * Product group: Household
 * Price: 2,25 €
 
-The functionality of the machine should be ensured through tests. The demonstration can take place via Rest or via React GUI. We would be happy about a small React GUI.
-No real persistence layer is necessary.
+The backend of the application is already set up as a Spring Boot application with an in-memory HSQL database and Flyway for database migrations.
+The initial migrations have already been created, including the [products table](./backend/src/main/resources/db/migration/V1__Initial.sql) and the [corresponding products](./backend/src/main/resources/db/migration/V2__Products.sql).
+The frontend is set up as a simple Vite React TypeScript application.
+
+Your task is to implement the necessary functionality in both the backend and frontend to fulfill the requirements mentioned above.
