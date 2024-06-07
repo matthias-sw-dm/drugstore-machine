@@ -2,10 +2,7 @@
 
 ## The dm drugstore machine
 
-* The drugstore machine manages 8 different products
-* The machine can be filled with products
-* Customers can buy products and the machine calculates the total price
-* You can only buy as many products as there are in the machine
+The drugstore machine works like a digital vending machine and manages 8 different products
 
 ### Product 1:
 
@@ -63,5 +60,9 @@
 * Product group: Household
 * Price: 2,25 €
 
-The functionality of the machine should be ensured through tests. The demonstration can take place via Rest or via React GUI. We would be happy about a small React GUI.
-No real persistence layer is necessary.
+## Your task is to implement the following features:
+* The machine can be filled with products e.q. add 3 times the "Balea shower gel" to the machine
+* Customers can buy products and the machine calculates the total price e.q. a user wants to buy 3 times the "Balea shower gel" and 1 time thr "SEINZ beard oil" the total price is 3 * 0,55 € + 1 * 7,95 € = 9,60 €
+* You can only buy as many products as there are in the machine
+
+The business logic should be implemented in the backend project witten in Java with Spring Boot. Every feature should have a simple frontend representation. The frontend should be implemented in React.
