@@ -2,7 +2,13 @@
 
 ## The dm drugstore machine
 
-The drugstore machine works like a digital vending machine and manages 8 different products
+You are tasked with implementing a simple drugstore machine that works like a vending machine and manages different products. The machine should be able to perform the following operations:
+
+1. Fill the machine with products e.q. add 3 times the "Balea shower gel" to the machine
+2. Allow customers to buy products and calculate the total price e.q. a user wants to buy 3 times the "Balea shower gel" and 1 time thr "SEINZ beard oil" the total price is 3 * 0,55 € + 1 * 7,95 € = 9,60 €
+3. Enforce the constraint that customers can only buy as many products as there are in the machine. 
+
+The machine should support the following products:
 
 ### Product 1:
 
@@ -60,9 +66,8 @@ The drugstore machine works like a digital vending machine and manages 8 differe
 * Product group: Household
 * Price: 2,25 €
 
-## Your task is to implement the following features:
-* The machine can be filled with products e.q. add 3 times the "Balea shower gel" to the machine
-* Customers can buy products and the machine calculates the total price e.q. a user wants to buy 3 times the "Balea shower gel" and 1 time thr "SEINZ beard oil" the total price is 3 * 0,55 € + 1 * 7,95 € = 9,60 €
-* You can only buy as many products as there are in the machine
+The backend of the application is already set up as a Spring Boot application with an in-memory HSQL database and Flyway for database migrations.
+The initial migrations have already been created, including the [products table](./backend/src/main/resources/db/migration/V1__Initial.sql) and the [corresponding products](./backend/src/main/resources/db/migration/V2__Products.sql).
+The frontend is set up as a simple Vite React TypeScript application.
 
-The business logic should be implemented in the backend project witten in Java with Spring Boot. Every feature should have a simple frontend representation. The frontend should be implemented in React.
+Your task is to implement the necessary functionality in both the backend and frontend to fulfill the requirements mentioned above.
