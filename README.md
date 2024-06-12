@@ -71,3 +71,9 @@ The initial migrations have already been created, including the [products table]
 The frontend is set up as a simple Vite React TypeScript application.
 
 Your task is to implement the necessary functionality in both the backend and frontend to fulfill the requirements mentioned above.
+## Mockup
+Mockup for Task 1: 
+![Mockup for Task 1](./images/Mockup_Task_1.png)
+
+Mockup for Task 2 & 3:
+![Mockup for Task 2 & 3](./images/Mockup_Task_2+3.png)
